@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Codeforces Submission Notifications",
+    "version": "1.0",
+    "description": "Get notified when a Codeforces submission is accepted or rejected.",
+    "permissions": [
+        "notifications",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://codeforces.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png"
+        }
+    }
+}
